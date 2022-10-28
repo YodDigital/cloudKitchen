@@ -1,9 +1,12 @@
+<!-- banner -->
 <div class="banner">
     <div class="bannertxt">
         <h1>Fresh Cooked Food <br> At Your Door</h1>
         <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
     </div>
 </div>
+
+<!-- steps -->
 <div class="steps mt-4">
     <h1>How to get <span>fresh food</span> </h1>
     <div class="container mt-5 mb-3">
@@ -33,7 +36,20 @@
             </div>
         </div>
     </div>
-    
-    
-
 </div>
+
+<!-- orderdetails -->
+<div class="container mt-5">
+    <h1 class="text-center">Customer <span>Favorite Foods</span> </h1>
+    <div class="row">
+        <div class="col-lg-3 mt-4" *ngFor='let order of foodData; index as i'>
+           <div class="order-details" *ngIf="i<=3">
+                <img [src]="order.foodImg">
+                <h1>{{order.foodName}}</h1>
+                <p>{{order.foodPrice | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebutton"> view more <i class="bi bi-arrow-right"></i></a>
+</div>
+
