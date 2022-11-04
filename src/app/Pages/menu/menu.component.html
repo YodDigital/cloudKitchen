@@ -1,1 +1,14 @@
-<p>menu works!</p>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <app-foodbox class="col-lg-4" *ngFor="let order of foodData" [food]="order">
+
+            <!-- <div class="foodbox mt-2 mb-2">
+                <img [src]="order.foodImg" alt="">
+                <h1>{{order.foodName}}</h1>
+                <p>{{order.foodDetails}}</p>
+                <p>{{order.foodPrice | currency}}</p>
+                <a href="">Buy Now &nbsp; <i class="bi bi-bag"></i></a>
+            </div> -->
+        </app-foodbox>
+    </div>
+</div>

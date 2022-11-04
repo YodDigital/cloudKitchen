@@ -1,5 +1,7 @@
-/* .foodbox{
+.foodbox{
     padding: 10px;
+    /* box-sizing: border-box;
+    height: 500px; */
 }
 .foodbox img{
     width: 100%;
@@ -12,6 +14,9 @@
     margin-top: 20px;
     font-weight: bold;
 }
+/* .foodbox p{
+
+} */
 a{
     background-color: var(--primary-color);
     color: #000;
@@ -22,4 +27,4 @@ a{
     margin-top: 10px;
     text-decoration: none;
     cursor: pointer;
-} */
+}

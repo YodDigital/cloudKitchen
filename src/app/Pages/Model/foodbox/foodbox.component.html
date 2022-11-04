@@ -1,0 +1,7 @@
+<div class="foodbox mt-2 mb-2">
+    <img [src]="food.foodImg" alt="">
+    <h1>{{food.foodName}}</h1>
+    <p>{{food.foodDetails}}</p>
+    <p>{{food.foodPrice | currency}}</p>
+    <a [routerLink]="['../menu', food.id]">Buy Now &nbsp; <i class="bi bi-bag"></i></a>
+</div>

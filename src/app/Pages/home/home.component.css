@@ -2,7 +2,8 @@
     background-image: url(../../../assets/img/banner.jpg);
     height: 80%;
     background-position: top;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .bannertxt{
     position: absolute;
@@ -70,4 +71,25 @@ span{
     margin-bottom: 40px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+@media screen and (max-width:600px){
+    .banner{
+        height: 600px;
+    }  
+    .bannertxt{
+        position: absolute;
+        top: 34%;
+        left: 8%;
+    }
+    .bannertxt h1{
+        font-size: 35px;
+    }
+    .steps h1{
+        font-size: 40px;
+    }
+    .steps h1 span::before{
+        content:'\a';
+        white-space: pre;
+    }
 }

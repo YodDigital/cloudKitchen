@@ -9,6 +9,10 @@ import { HomeComponent } from './Pages/home/home.component';
 import { MenuComponent } from './Pages/menu/menu.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutComponent } from './Pages/about/about.component';
+import { FoodboxComponent } from './Pages/Model/foodbox/foodbox.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { MenupageComponent } from './Pages/menupage/menupage.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { AboutComponent } from './Pages/about/about.component';
     HomeComponent,
     MenuComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    FoodboxComponent,
+    MenupageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
